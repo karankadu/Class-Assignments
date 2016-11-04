@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B2BF9A1D45DD8D00CF78C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2BF991D45DD8D00CF78C7 /* main.m */; };
+		18B2BF9D1D45DD8D00CF78C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2BF9C1D45DD8D00CF78C7 /* AppDelegate.m */; };
+		18B2BFA61D45DD8D00CF78C7 /* MultiplicationTable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18B2BFA41D45DD8D00CF78C7 /* MultiplicationTable.xcdatamodeld */; };
+		18B2BFA81D45DD8D00CF78C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B2BFA71D45DD8D00CF78C7 /* Assets.xcassets */; };
+		18B2BFAB1D45DD8D00CF78C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B2BFA91D45DD8D00CF78C7 /* LaunchScreen.storyboard */; };
+		18B2BFB61D45DD8D00CF78C7 /* MultiplicationTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2BFB51D45DD8D00CF78C7 /* MultiplicationTableTests.m */; };
+		18B2BFC11D45DD8D00CF78C7 /* MultiplicationTableUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2BFC01D45DD8D00CF78C7 /* MultiplicationTableUITests.m */; };
+		18B2BFD11D45DDC200CF78C7 /* multiplicationtableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2BFCF1D45DDC200CF78C7 /* multiplicationtableViewController.m */; };
+		18B2BFD21D45DDC200CF78C7 /* multiplicationtableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B2BFD01D45DDC200CF78C7 /* multiplicationtableViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B2BFB21D45DD8D00CF78C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B2BF8D1D45DD8D00CF78C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B2BF941D45DD8D00CF78C7;
+			remoteInfo = MultiplicationTable;
+		};
+		18B2BFBD1D45DD8D00CF78C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B2BF8D1D45DD8D00CF78C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B2BF941D45DD8D00CF78C7;
+			remoteInfo = MultiplicationTable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18B2BF951D45DD8D00CF78C7 /* MultiplicationTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B2BF991D45DD8D00CF78C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18B2BF9B1D45DD8D00CF78C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18B2BF9C1D45DD8D00CF78C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18B2BFA51D45DD8D00CF78C7 /* MultiplicationTable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MultiplicationTable.xcdatamodel; sourceTree = "<group>"; };
+		18B2BFA71D45DD8D00CF78C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B2BFAA1D45DD8D00CF78C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18B2BFAC1D45DD8D00CF78C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B2BFB11D45DD8D00CF78C7 /* MultiplicationTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiplicationTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B2BFB51D45DD8D00CF78C7 /* MultiplicationTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiplicationTableTests.m; sourceTree = "<group>"; };
+		18B2BFB71D45DD8D00CF78C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B2BFBC1D45DD8D00CF78C7 /* MultiplicationTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiplicationTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B2BFC01D45DD8D00CF78C7 /* MultiplicationTableUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiplicationTableUITests.m; sourceTree = "<group>"; };
+		18B2BFC21D45DD8D00CF78C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B2BFCE1D45DDC200CF78C7 /* multiplicationtableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multiplicationtableViewController.h; sourceTree = "<group>"; };
+		18B2BFCF1D45DDC200CF78C7 /* multiplicationtableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = multiplicationtableViewController.m; sourceTree = "<group>"; };
+		18B2BFD01D45DDC200CF78C7 /* multiplicationtableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = multiplicationtableViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B2BF921D45DD8D00CF78C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2BFAE1D45DD8D00CF78C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2BFB91D45DD8D00CF78C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B2BF8C1D45DD8D00CF78C7 = {
+			isa = PBXGroup;
+			children = (
+				18B2BF971D45DD8D00CF78C7 /* MultiplicationTable */,
+				18B2BFB41D45DD8D00CF78C7 /* MultiplicationTableTests */,
+				18B2BFBF1D45DD8D00CF78C7 /* MultiplicationTableUITests */,
+				18B2BF961D45DD8D00CF78C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B2BF961D45DD8D00CF78C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B2BF951D45DD8D00CF78C7 /* MultiplicationTable.app */,
+				18B2BFB11D45DD8D00CF78C7 /* MultiplicationTableTests.xctest */,
+				18B2BFBC1D45DD8D00CF78C7 /* MultiplicationTableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B2BF971D45DD8D00CF78C7 /* MultiplicationTable */ = {
+			isa = PBXGroup;
+			children = (
+				18B2BF9B1D45DD8D00CF78C7 /* AppDelegate.h */,
+				18B2BF9C1D45DD8D00CF78C7 /* AppDelegate.m */,
+				18B2BFCE1D45DDC200CF78C7 /* multiplicationtableViewController.h */,
+				18B2BFCF1D45DDC200CF78C7 /* multiplicationtableViewController.m */,
+				18B2BFD01D45DDC200CF78C7 /* multiplicationtableViewController.xib */,
+				18B2BFA91D45DD8D00CF78C7 /* LaunchScreen.storyboard */,
+				18B2BFAC1D45DD8D00CF78C7 /* Info.plist */,
+				18B2BFA41D45DD8D00CF78C7 /* MultiplicationTable.xcdatamodeld */,
+				18B2BFA71D45DD8D00CF78C7 /* Assets.xcassets */,
+				18B2BF981D45DD8D00CF78C7 /* Supporting Files */,
+			);
+			path = MultiplicationTable;
+			sourceTree = "<group>";
+		};
+		18B2BF981D45DD8D00CF78C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18B2BF991D45DD8D00CF78C7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18B2BFB41D45DD8D00CF78C7 /* MultiplicationTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B2BFB51D45DD8D00CF78C7 /* MultiplicationTableTests.m */,
+				18B2BFB71D45DD8D00CF78C7 /* Info.plist */,
+			);
+			path = MultiplicationTableTests;
+			sourceTree = "<group>";
+		};
+		18B2BFBF1D45DD8D00CF78C7 /* MultiplicationTableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18B2BFC01D45DD8D00CF78C7 /* MultiplicationTableUITests.m */,
+				18B2BFC21D45DD8D00CF78C7 /* Info.plist */,
+			);
+			path = MultiplicationTableUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B2BF941D45DD8D00CF78C7 /* MultiplicationTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B2BFC51D45DD8D00CF78C7 /* Build configuration list for PBXNativeTarget "MultiplicationTable" */;
+			buildPhases = (
+				18B2BF911D45DD8D00CF78C7 /* Sources */,
+				18B2BF921D45DD8D00CF78C7 /* Frameworks */,
+				18B2BF931D45DD8D00CF78C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiplicationTable;
+			productName = MultiplicationTable;
+			productReference = 18B2BF951D45DD8D00CF78C7 /* MultiplicationTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B2BFB01D45DD8D00CF78C7 /* MultiplicationTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B2BFC81D45DD8D00CF78C7 /* Build configuration list for PBXNativeTarget "MultiplicationTableTests" */;
+			buildPhases = (
+				18B2BFAD1D45DD8D00CF78C7 /* Sources */,
+				18B2BFAE1D45DD8D00CF78C7 /* Frameworks */,
+				18B2BFAF1D45DD8D00CF78C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B2BFB31D45DD8D00CF78C7 /* PBXTargetDependency */,
+			);
+			name = MultiplicationTableTests;
+			productName = MultiplicationTableTests;
+			productReference = 18B2BFB11D45DD8D00CF78C7 /* MultiplicationTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18B2BFBB1D45DD8D00CF78C7 /* MultiplicationTableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B2BFCB1D45DD8D00CF78C7 /* Build configuration list for PBXNativeTarget "MultiplicationTableUITests" */;
+			buildPhases = (
+				18B2BFB81D45DD8D00CF78C7 /* Sources */,
+				18B2BFB91D45DD8D00CF78C7 /* Frameworks */,
+				18B2BFBA1D45DD8D00CF78C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B2BFBE1D45DD8D00CF78C7 /* PBXTargetDependency */,
+			);
+			name = MultiplicationTableUITests;
+			productName = MultiplicationTableUITests;
+			productReference = 18B2BFBC1D45DD8D00CF78C7 /* MultiplicationTableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B2BF8D1D45DD8D00CF78C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "felix-its";
+				TargetAttributes = {
+					18B2BF941D45DD8D00CF78C7 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 76Z252SP9D;
+					};
+					18B2BFB01D45DD8D00CF78C7 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 76Z252SP9D;
+						TestTargetID = 18B2BF941D45DD8D00CF78C7;
+					};
+					18B2BFBB1D45DD8D00CF78C7 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 76Z252SP9D;
+						TestTargetID = 18B2BF941D45DD8D00CF78C7;
+					};
+				};
+			};
+			buildConfigurationList = 18B2BF901D45DD8D00CF78C7 /* Build configuration list for PBXProject "MultiplicationTable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B2BF8C1D45DD8D00CF78C7;
+			productRefGroup = 18B2BF961D45DD8D00CF78C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B2BF941D45DD8D00CF78C7 /* MultiplicationTable */,
+				18B2BFB01D45DD8D00CF78C7 /* MultiplicationTableTests */,
+				18B2BFBB1D45DD8D00CF78C7 /* MultiplicationTableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B2BF931D45DD8D00CF78C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2BFAB1D45DD8D00CF78C7 /* LaunchScreen.storyboard in Resources */,
+				18B2BFD21D45DDC200CF78C7 /* multiplicationtableViewController.xib in Resources */,
+				18B2BFA81D45DD8D00CF78C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2BFAF1D45DD8D00CF78C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2BFBA1D45DD8D00CF78C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B2BF911D45DD8D00CF78C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2BFA61D45DD8D00CF78C7 /* MultiplicationTable.xcdatamodeld in Sources */,
+				18B2BF9D1D45DD8D00CF78C7 /* AppDelegate.m in Sources */,
+				18B2BF9A1D45DD8D00CF78C7 /* main.m in Sources */,
+				18B2BFD11D45DDC200CF78C7 /* multiplicationtableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2BFAD1D45DD8D00CF78C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2BFB61D45DD8D00CF78C7 /* MultiplicationTableTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2BFB81D45DD8D00CF78C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2BFC11D45DD8D00CF78C7 /* MultiplicationTableUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B2BFB31D45DD8D00CF78C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B2BF941D45DD8D00CF78C7 /* MultiplicationTable */;
+			targetProxy = 18B2BFB21D45DD8D00CF78C7 /* PBXContainerItemProxy */;
+		};
+		18B2BFBE1D45DD8D00CF78C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B2BF941D45DD8D00CF78C7 /* MultiplicationTable */;
+			targetProxy = 18B2BFBD1D45DD8D00CF78C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18B2BFA91D45DD8D00CF78C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B2BFAA1D45DD8D00CF78C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18B2BFC31D45DD8D00CF78C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B2BFC41D45DD8D00CF78C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B2BFC61D45DD8D00CF78C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MultiplicationTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.felix.MultiplicationTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18B2BFC71D45DD8D00CF78C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MultiplicationTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.felix.MultiplicationTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18B2BFC91D45DD8D00CF78C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MultiplicationTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.felix.MultiplicationTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiplicationTable.app/MultiplicationTable";
+			};
+			name = Debug;
+		};
+		18B2BFCA1D45DD8D00CF78C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MultiplicationTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.felix.MultiplicationTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiplicationTable.app/MultiplicationTable";
+			};
+			name = Release;
+		};
+		18B2BFCC1D45DD8D00CF78C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MultiplicationTableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.felix.MultiplicationTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MultiplicationTable;
+			};
+			name = Debug;
+		};
+		18B2BFCD1D45DD8D00CF78C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MultiplicationTableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.felix.MultiplicationTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MultiplicationTable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B2BF901D45DD8D00CF78C7 /* Build configuration list for PBXProject "MultiplicationTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2BFC31D45DD8D00CF78C7 /* Debug */,
+				18B2BFC41D45DD8D00CF78C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B2BFC51D45DD8D00CF78C7 /* Build configuration list for PBXNativeTarget "MultiplicationTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2BFC61D45DD8D00CF78C7 /* Debug */,
+				18B2BFC71D45DD8D00CF78C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B2BFC81D45DD8D00CF78C7 /* Build configuration list for PBXNativeTarget "MultiplicationTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2BFC91D45DD8D00CF78C7 /* Debug */,
+				18B2BFCA1D45DD8D00CF78C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B2BFCB1D45DD8D00CF78C7 /* Build configuration list for PBXNativeTarget "MultiplicationTableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2BFCC1D45DD8D00CF78C7 /* Debug */,
+				18B2BFCD1D45DD8D00CF78C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18B2BFA41D45DD8D00CF78C7 /* MultiplicationTable.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18B2BFA51D45DD8D00CF78C7 /* MultiplicationTable.xcdatamodel */,
+			);
+			currentVersion = 18B2BFA51D45DD8D00CF78C7 /* MultiplicationTable.xcdatamodel */;
+			path = MultiplicationTable.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18B2BF8D1D45DD8D00CF78C7 /* Project object */;
+}
