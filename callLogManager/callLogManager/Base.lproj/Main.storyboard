@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16A238m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="barTintColor" red="1" green="0.97876164794708476" blue="0.40300781530443908" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Epi-72-leo" kind="relationship" relationship="viewControllers" id="vvr-mG-bHE"/>
+                        <segue destination="kE6-b0-Eif" kind="relationship" relationship="viewControllers" id="ul4-w5-9yB"/>
+                        <segue destination="dhB-a5-h3C" kind="relationship" relationship="viewControllers" id="o0Y-U3-vva"/>
+                        <segue destination="RYU-jX-Chw" kind="relationship" relationship="viewControllers" id="e40-mG-caA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--All Calls-->
+        <scene sceneID="qve-Fs-tyf">
+            <objects>
+                <tableViewController modalTransitionStyle="flipHorizontal" id="Epi-72-leo" customClass="AllCall_TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="SXx-kX-SU9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="IeX-Mt-Mxa">
+                                <rect key="frame" x="0.0" y="28" width="320" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IeX-Mt-Mxa" id="ud4-2A-xlU">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Epi-72-leo" id="mts-l7-kl1"/>
+                            <outlet property="delegate" destination="Epi-72-leo" id="jT4-NH-uYV"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="All Calls" image="call" id="MAO-zm-W6X"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tA1-ne-nZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="434" y="-227"/>
+        </scene>
+        <!--DIALED-->
+        <scene sceneID="ZVh-jf-po4">
+            <objects>
+                <tableViewController modalTransitionStyle="partialCurl" id="kE6-b0-Eif" customClass="DialedCall_TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" id="xM6-Be-3mE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="0sM-Fj-Spa" customClass="customTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="320" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0sM-Fj-Spa" id="Bwm-VR-G7Q">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kE6-b0-Eif" id="Chj-Mv-ltE"/>
+                            <outlet property="delegate" destination="kE6-b0-Eif" id="REj-O5-lwT"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="DIALED" image="dialedcallicon" id="cQT-I9-8aW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbx-Or-NOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="434" y="441"/>
+        </scene>
+        <!--RECEIVED-->
+        <scene sceneID="yHj-Qd-iAj">
+            <objects>
+                <tableViewController modalTransitionStyle="crossDissolve" id="dhB-a5-h3C" customClass="ReceivedCall_TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="FS7-pI-37t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="BBf-qx-fJS">
+                                <rect key="frame" x="0.0" y="28" width="320" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BBf-qx-fJS" id="hyC-gU-9Ex">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dhB-a5-h3C" id="L5d-Ay-eXt"/>
+                            <outlet property="delegate" destination="dhB-a5-h3C" id="A2j-Vp-fL1"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="RECEIVED" image="receivecallicon" id="RTN-Iy-rNz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlf-yv-Iqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="-141"/>
+        </scene>
+        <!--MISSED-->
+        <scene sceneID="mkf-8n-0ju">
+            <objects>
+                <tableViewController modalTransitionStyle="partialCurl" id="RYU-jX-Chw" customClass="MissedCall_TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="4zT-mL-pa4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="thq-NC-F4v">
+                                <rect key="frame" x="0.0" y="28" width="320" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="thq-NC-F4v" id="CRI-gL-KqU">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RYU-jX-Chw" id="Wdc-n7-1hd"/>
+                            <outlet property="delegate" destination="RYU-jX-Chw" id="5bw-QK-ixo"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="MISSED" image="missedcallicon" id="jfe-Xy-rqc"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0tr-mO-FX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="495"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="call" width="30" height="30"/>
+        <image name="dialedcallicon" width="30" height="30"/>
+        <image name="missedcallicon" width="30" height="30"/>
+        <image name="receivecallicon" width="30" height="30"/>
+    </resources>
+</document>

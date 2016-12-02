@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16A238m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call Log Manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjK-dS-Xam">
+                                <rect key="frame" x="48" y="338" width="224" height="60"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="41"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed By Karan Kadu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjA-5Z-9qp">
+                                <rect key="frame" x="61" y="402" width="199" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="uey-Ga-XtG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Call-History-Manager_80p" translatesAutoresizingMaskIntoConstraints="NO" id="BGT-Ng-79f">
+                                <rect key="frame" x="110" y="230" width="100" height="107"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BGT-Ng-79f" firstAttribute="centerX" secondItem="zjK-dS-Xam" secondAttribute="centerX" id="0df-vU-a62"/>
+                            <constraint firstItem="BGT-Ng-79f" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3Ql-9p-K4k"/>
+                            <constraint firstItem="zjK-dS-Xam" firstAttribute="top" secondItem="BGT-Ng-79f" secondAttribute="bottom" constant="1" id="EO2-be-VjN"/>
+                            <constraint firstItem="BGT-Ng-79f" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LCv-Iy-Wci"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="kjA-5Z-9qp" secondAttribute="bottom" constant="145" id="N9J-MN-daD"/>
+                            <constraint firstItem="zjK-dS-Xam" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="32" id="Wws-ha-vbr"/>
+                            <constraint firstItem="kjA-5Z-9qp" firstAttribute="top" secondItem="zjK-dS-Xam" secondAttribute="bottom" constant="4" id="bz9-xb-baV"/>
+                            <constraint firstItem="BGT-Ng-79f" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="94" id="eT4-4G-DDH"/>
+                            <constraint firstItem="BGT-Ng-79f" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="210" id="mlI-9K-YHS"/>
+                            <constraint firstItem="zjK-dS-Xam" firstAttribute="centerX" secondItem="kjA-5Z-9qp" secondAttribute="centerX" id="ov8-Ca-rAF"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="367"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Call-History-Manager_80p" width="80" height="80"/>
+    </resources>
+</document>

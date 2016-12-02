@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A238m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="customTableViewCell" customModule="CallLogManager_Using_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4V-KB-kmJ">
+                        <rect key="frame" x="80" y="8" width="161" height="30"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsU-u6-6ui">
+                        <rect key="frame" x="80" y="46" width="161" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="SJ3-cA-TER"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nophoto" translatesAutoresizingMaskIntoConstraints="NO" id="OhU-xZ-eNe">
+                        <rect key="frame" x="3" y="4" width="69" height="75"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receivecall" translatesAutoresizingMaskIntoConstraints="NO" id="aT6-EX-1yB">
+                        <rect key="frame" x="261" y="2" width="55" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="I40-Z3-kvO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="callTiming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKO-hH-xDb">
+                        <rect key="frame" x="247" y="62" width="70" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6si-Vb-IRV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.16171955969999999" blue="0.086400451779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="e4V-KB-kmJ" firstAttribute="leading" secondItem="YsU-u6-6ui" secondAttribute="leading" id="2qW-wE-g3W"/>
+                    <constraint firstItem="sKO-hH-xDb" firstAttribute="leading" secondItem="YsU-u6-6ui" secondAttribute="trailing" constant="6" id="81o-o1-cRT"/>
+                    <constraint firstItem="OhU-xZ-eNe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8aV-HQ-PoF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="YsU-u6-6ui" secondAttribute="bottom" constant="9" id="F02-md-e13"/>
+                    <constraint firstItem="e4V-KB-kmJ" firstAttribute="trailing" secondItem="YsU-u6-6ui" secondAttribute="trailing" id="IKE-wM-jVZ"/>
+                    <constraint firstItem="aT6-EX-1yB" firstAttribute="leading" secondItem="e4V-KB-kmJ" secondAttribute="trailing" constant="20" id="KLX-Es-64T"/>
+                    <constraint firstItem="e4V-KB-kmJ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LNh-Xg-1Jq"/>
+                    <constraint firstItem="aT6-EX-1yB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-6" id="S6z-C5-9o2"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sKO-hH-xDb" secondAttribute="trailing" constant="-5" id="Sem-sh-iR7"/>
+                    <constraint firstItem="YsU-u6-6ui" firstAttribute="top" secondItem="e4V-KB-kmJ" secondAttribute="bottom" constant="8" symbolic="YES" id="WMF-JD-22J"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sKO-hH-xDb" secondAttribute="bottom" constant="-7" id="ZCQ-HY-Ecf"/>
+                    <constraint firstItem="sKO-hH-xDb" firstAttribute="top" secondItem="aT6-EX-1yB" secondAttribute="bottom" id="eVa-69-1RV"/>
+                    <constraint firstItem="OhU-xZ-eNe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-5" id="gIS-22-0jK"/>
+                    <constraint firstItem="OhU-xZ-eNe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="gMX-cs-4wN"/>
+                    <constraint firstItem="e4V-KB-kmJ" firstAttribute="leading" secondItem="OhU-xZ-eNe" secondAttribute="trailing" constant="8" symbolic="YES" id="gTs-Ab-GUj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="aT6-EX-1yB" secondAttribute="trailing" constant="-4" id="iLF-Pc-XZq"/>
+                    <constraint firstItem="e4V-KB-kmJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="oEh-Tb-hZL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="callImageView" destination="aT6-EX-1yB" id="OIn-L3-zo6"/>
+                <outlet property="callTimingLbl" destination="sKO-hH-xDb" id="IMd-qf-kRW"/>
+                <outlet property="dateLbl" destination="YsU-u6-6ui" id="HcG-23-GvS"/>
+                <outlet property="userImageView" destination="OhU-xZ-eNe" id="VfS-R2-LCA"/>
+                <outlet property="userNameLbl" destination="e4V-KB-kmJ" id="oGW-ZQ-1A8"/>
+            </connections>
+            <point key="canvasLocation" x="186" y="203.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="nophoto" width="70" height="70"/>
+        <image name="receivecall" width="30" height="30"/>
+    </resources>
+</document>
